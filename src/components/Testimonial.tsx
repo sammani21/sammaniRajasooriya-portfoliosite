@@ -40,7 +40,7 @@ const Testimonial = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (current: any, next: any) => {
+    beforeChange: (_current: any, next: any) => {
       setDotActive(next);
     },
     appendDots: (dots: any) => (

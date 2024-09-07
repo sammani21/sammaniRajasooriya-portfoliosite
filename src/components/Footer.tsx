@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaMediumM, FaYoutube, FaGraduationCap } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaMediumM, FaYoutube} from "react-icons/fa";
 import { logo } from "../assets";
 import { FadeIn } from "./FadeIn";
 
