@@ -117,7 +117,9 @@ const Testimonial = () => {
                           ? "Mastering Sorting Algorithms"
                           : index === 2
                           ? " Lottie Files"
-                          : "Email Services in Web Development"}
+                          : index === 3
+                          ? "Email Services in Web Development"
+                          : "Mastering Website Deployment"}
                       </h3>
                       <p className="text-base tracking-wide text-gray-500">
                         {index === 0
@@ -126,7 +128,9 @@ const Testimonial = () => {
                           ? "Bubble, Insertion, and Selection Sort in Java and C"
                           : index === 2
                           ? "A Step-by-Step Guide for use Lottie Files in React App"
-                          : "A Comprehensive Guide"}
+                          : index === 3
+                          ? "A Comprehensive Guide"
+                          : "From Code to Live in Easy Steps"}
                       </p>
                       <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                         <a
@@ -137,7 +141,9 @@ const Testimonial = () => {
                               ? "https://medium.com/@KavindhyaSammani/mastering-sorting-algorithms-bubble-insertion-and-selection-sort-in-java-and-c-abd304a2e94e"
                               : index === 2
                               ? "https://medium.com/@KavindhyaSammani/bringing-your-react-app-to-life-with-lottie-files-a-step-by-step-guide-1638f79f782e"
-                              : "https://medium.com/@KavindhyaSammani/exploring-email-services-in-web-development-a-comprehensive-guide-b66c1b3e94a0"
+                              : index === 3
+                              ? "https://medium.com/@KavindhyaSammani/exploring-email-services-in-web-development-a-comprehensive-guide-b66c1b3e94a0"
+                              : "https://medium.com/@KavindhyaSammani/mastering-website-deployment-from-code-to-live-in-easy-steps-23274dbc563a"
                             }
                           target="_blank"
                           rel="noopener noreferrer"
