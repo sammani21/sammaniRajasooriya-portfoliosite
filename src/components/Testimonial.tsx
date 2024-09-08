@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
-import { testimonialOne, testimonialTwo, testimonialThree, testimonialFour } from "../assets";
+import { testimonialOne, testimonialTwo, testimonialThree, testimonialFour, testimonialFive } from "../assets";
 import { FadeIn } from "./FadeIn";
 
 function SampleNextArrow(props: any) {
@@ -98,7 +98,7 @@ const Testimonial = () => {
 
         {/* ================ Slider ================== */}
         <Slider {...settings}>
-          {[testimonialOne, testimonialTwo, testimonialThree , testimonialFour].map(
+          {[testimonialOne, testimonialTwo, testimonialThree , testimonialFour, testimonialFive].map(
             (testimonial, index) => (
               <div key={index} className="flex justify-center items-center">
                 <div className="w-full max-w-[1800px] h-auto flex flex-col lgl:flex-row justify-center items-center gap-8">
