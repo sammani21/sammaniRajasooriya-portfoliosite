@@ -12,10 +12,12 @@ import testimonialFive from "./images/testmonial/testimonialFive.png";
 import medium_logo from "./images/testmonial/medium logo.png";
 import contactImg from "./images/contact/contactImg.png";
 import cv from "./files/KS Rajasooriya .pdf";
+import bannerImage from "./images/bannerImage.png";
 
 export {
   logo,
   bannerImg,
+  bannerImage,
   projectOne,
   projectTwo,
   projectThree,
