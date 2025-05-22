@@ -21,7 +21,7 @@ const LeftBanner = () => {
         </h1>
         <h2 className="text-4xl font-bold text-white">
            <span>{text}</span>
-          <Cursor cursorStyle="|" cursorColor="#ff014f" />
+          <Cursor cursorStyle="|" cursorColor="#2AAA8A" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
           Hello! I'm a passionate IT undergraduate with a love for technology and a constant drive to learn more. My curiosity fuels my journey in the tech world, where I'm always eager to tackle new challenges and create innovative solutions. Let's connect and share our passion for technology! Reach out to me on LinkedIn or via email—I'm always open to advice, opportunities, and new ideas. Together, we can make a difference in the tech industry.

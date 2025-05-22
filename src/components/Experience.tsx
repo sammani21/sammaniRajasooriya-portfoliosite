@@ -22,6 +22,10 @@ const Experience = () => {
             title="Staff Trainee Intern"
             subTitle="Peoples Bank - Homagama"
           />
+          <ResumeCard
+            title="Software Engineer Intern"
+            subTitle="Sri Lanka Telecom PLC - Digital Platform Development Section"
+          />
         </div>
       </div>
     </motion.div>
