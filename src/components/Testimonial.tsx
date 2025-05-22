@@ -1,13 +1,27 @@
 import { useState } from "react";
 import Slider from "react-slick";
-
+import { MouseEventHandler } from "react";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
 import { testimonialOne, testimonialTwo, testimonialThree, testimonialFour, testimonialFive } from "../assets";
 import { FadeIn } from "./FadeIn";
 
-function SampleNextArrow(props: any) {
+interface ArrowProps {
+  onClick?: MouseEventHandler<HTMLDivElement>;
+}
+
+/*function SampleNextArrow(props: any) {
   const { onClick } = props;
+  return (
+    <div
+      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-1/2 right-0 transform -translate-y-1/2 shadow-shadowOne cursor-pointer z-10"
+      onClick={onClick}
+    >
+      <HiArrowRight />
+    </div>
+  );
+}*/
+function SampleNextArrow({ onClick }: ArrowProps) {
   return (
     <div
       className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-1/2 right-0 transform -translate-y-1/2 shadow-shadowOne cursor-pointer z-10"
@@ -18,8 +32,18 @@ function SampleNextArrow(props: any) {
   );
 }
 
-function SamplePrevArrow(props: any) {
+/*function SamplePrevArrow(props: any) {
   const { onClick } = props;
+  return (
+    <div
+      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-1/2 left-0 transform -translate-y-1/2 shadow-shadowOne cursor-pointer z-10"
+      onClick={onClick}
+    >
+      <HiArrowLeft />
+    </div>
+  );
+}*/
+function SamplePrevArrow({ onClick }: ArrowProps) {
   return (
     <div
       className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-gray-400 flex justify-center items-center absolute top-1/2 left-0 transform -translate-y-1/2 shadow-shadowOne cursor-pointer z-10"
@@ -40,10 +64,12 @@ const Testimonial = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (_current: any, next: any) => {
+    /*beforeChange: (_current: any, next: any) => {
       setDotActive(next);
     },
-    appendDots: (dots: any) => (
+    appendDots: (dots: any) => (*/
+    beforeChange: (_current: number, next: number) => setDotActive(next),
+appendDots: (dots: React.ReactNode) => (
       <div
         style={{
           borderRadius: "10px",
@@ -62,7 +88,8 @@ const Testimonial = () => {
         </ul>
       </div>
     ),
-    customPaging: (i: any) => (
+    /*customPaging: (i: any) => (*/
+    customPaging: (i: number) => (
       <div
         style={
           i === dotActive
