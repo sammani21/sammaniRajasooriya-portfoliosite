@@ -21,14 +21,29 @@ const Resume = () => {
           <Title title=" Expertise" des="My Resume" />
         </div>
         <div className="flex flex-col items-center">
-          {/* Download CV Button */}
-          <a
-            href={cv} // Replace this with the actual path to your CV file
-            download
-            className="mb-6 bg-designColor text-white py-2 px-4 rounded-lg flex items-center gap-2"
-          >
-            <FaDownload /> Download CV
-          </a>
+  {/* CV Selection Buttons */}
+  <div className="mb-6 flex gap-4">
+    <button className="py-2 px-4 rounded-lg bg-designColor text-">
+      Select SE CV
+    </button>
+    <button className="py-2 px-4 rounded-lg bg-gray-200">
+      Select BA CV
+    </button>
+  </div>
+
+  {/* Download CV Link */}
+  <a
+    href={cv} // Replace this with the actual path to your selected CV
+    download
+    className="mb-6 bg-designColor text-white py-2 px-4 rounded-lg flex items-center gap-2"
+  >
+    <FaDownload />
+    Download
+    
+    SE
+    
+    CV
+  </a>
          
           <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
             <li
