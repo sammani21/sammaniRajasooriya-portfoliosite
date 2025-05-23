@@ -185,7 +185,7 @@ appendDots: (dots: React.ReactNode) => (
             )
           )}
         </Slider>
-       
+       <br />
 
         <div className="flex justify-center items-center text-center">
         <a
