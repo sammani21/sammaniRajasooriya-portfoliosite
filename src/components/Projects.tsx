@@ -1,6 +1,6 @@
 import Title from "./Title";
 import ProjectsCard from "./ProjectsCard";
-import { projectOne, projectThree, projectTwo, projectFour } from "../assets";
+import { projectOne, projectThree, projectTwo, projectFour, projectFive } from "../assets";
 import { FaReact, FaNodeJs, FaJsSquare, FaServer } from "react-icons/fa";
 import { SiMongodb, SiTypescript , SiExpress, SiC, SiArduino, SiFlutter , SiTailwindcss, SiVite} from "react-icons/si";
 //import { DiFlutter } from "react-icons/di";
@@ -47,7 +47,7 @@ const Projects = () => {
           />
           <ProjectsCard
             title="FITPRO - Fitness Tracking & Workout Planner App"
-            des=" Individual Project (Ongoing)"
+            des=" Individual Project "
             src={projectThree}
             technologies={[
               <FaReact className="text-blue-500" />,
@@ -68,6 +68,18 @@ const Projects = () => {
               <SiTypescript className="text-blue-600" />,
               <SiTailwindcss className="text-blue-400" />, // Tailwind CSS
               <SiVite className="text-purple-400" /> // Vite
+            ]}
+          />
+          <ProjectsCard
+            title="BeeHive Manager - Bee Keeping Management System"
+            des=" Third Year Individual Project "
+            src={projectFive}
+            technologies={[
+              <FaReact className="text-blue-500" />,
+              <FaNodeJs className="text-green-500" />,
+              <SiTypescript className="text-blue-600" />,
+              <SiMongodb className="text-green-400" />,
+              <SiExpress className="text-green-400" />,
             ]}
           />
          
