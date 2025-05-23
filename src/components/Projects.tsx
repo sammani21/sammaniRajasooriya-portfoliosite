@@ -72,6 +72,18 @@ const Projects = () => {
           />
          
         </div>
+        <br />
+        <br />
+
+        <div className="flex justify-center items-center text-center">
+        <a
+          href="https://github.com/sammani21"
+          target="_blank"
+          className="text-ls uppercase text-designColor flex tracking-wide mb-2 items-center text-center justify-center"
+        >
+          - Find More Projects Here -
+        </a>
+      </div>
       </FadeIn>
     </section>
   );
