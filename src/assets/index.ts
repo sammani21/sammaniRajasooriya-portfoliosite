@@ -13,8 +13,8 @@ import medium_logo from "./images/testmonial/medium logo.png";
 import contactImg from "./images/contact/contactImg.png";
 import cv from "./files/KS Rajasooriya .pdf";
 import bannerImage from "./images/bannerImage.png";
-//import cv1 from "./files/KS Rajasooriya SE .pdf";
-//import cv2 from "./files/KS Rajasooriya BA .pdf";
+import seCv from "./files/KS Rajasooriya SE.pdf";
+import baCv from "./files/KS Rajasooriya BA.pdf";
 
 export {
   logo,
@@ -32,6 +32,6 @@ export {
   medium_logo,
   contactImg,
   cv,
-  /*cv1,
-  cv2,*/
+  seCv,
+  baCv,
 };

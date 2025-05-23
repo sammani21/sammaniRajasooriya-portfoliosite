@@ -5,7 +5,7 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 import Achievement from "./Achievement";
 import { FadeIn } from "./FadeIn";
-import { cv } from "../assets";
+import { seCv, baCv } from "../assets";
 import { FaDownload } from "react-icons/fa"; // Importing an icon for the download button
 
 const Resume = () => {
@@ -13,37 +13,44 @@ const Resume = () => {
   const [skillData, setSkillData] = useState<Boolean>(false);
   const [experienceData, setExperienceData] = useState<Boolean>(false);
   const [achievementData, setAchievementData] = useState<Boolean>(false);
-
+const [selectedCv, setSelectedCv] = useState<"SE" | "BA" | null>(null);
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-gray-700">
       <FadeIn>
         <div className="flex justify-center items-center text-center">
           <Title title=" Expertise" des="My Resume" />
         </div>
+        
+  {/* CV picker + download */}
         <div className="flex flex-col items-center">
-  {/* CV Selection Buttons */}
-  <div className="mb-6 flex gap-4">
-    <button className="py-2 px-4 rounded-lg bg-designColor text-">
-      Select SE CV
-    </button>
-    <button className="py-2 px-4 rounded-lg bg-gray-200">
-      Select BA CV
-    </button>
-  </div>
+          <div className="mb-6 flex gap-4">
+            <button
+              onClick={() => setSelectedCv("SE")}
+              className={`py-2 px-4 rounded-lg transition
+                ${selectedCv === "SE" ? "bg-designColor text-white" : "bg-gray-200 text-black"}`}
+            >
+              Select SE CV
+            </button>
 
-  {/* Download CV Link */}
-  <a
-    href={cv} // Replace this with the actual path to your selected CV
-    download
-    className="mb-6 bg-designColor text-white py-2 px-4 rounded-lg flex items-center gap-2"
-  >
-    <FaDownload />
-    Download
-    
-    SE
-    
-    CV
-  </a>
+            <button
+              onClick={() => setSelectedCv("BA")}
+              className={`py-2 px-4 rounded-lg transition
+                ${selectedCv === "BA" ? "bg-designColor text-white" : "bg-gray-200 text-black"}`}
+            >
+              Select BA CV
+            </button>
+          </div>
+
+          {selectedCv && (
+            <a
+              href={selectedCv === "SE" ? seCv : baCv}
+              download
+              className="mb-6 bg-designColor text-white py-2 px-4 rounded-lg flex items-center gap-2"
+            >
+              <FaDownload />
+              Download&nbsp;{selectedCv}&nbsp;CV
+            </a>
+          )}
          
           <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
             <li
