@@ -21,7 +21,7 @@ const ContactLeft = () => {
 
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-white">Sammani Rajasooriya</h3>
-        <p className="text-lg font-normal text-gray-400">IT Undergraduate</p>
+        <p className="text-lg font-normal text-gray-400">IT Undergraduate / Software Engineer</p>
         <p className="text-base text-gray-400 tracking-wide">
           Contact me for inquiries, collaborations, or to learn more about my work. I would love to hear from you!
         </p>

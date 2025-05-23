@@ -1,6 +1,6 @@
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Footer from "./components/FooterBottom";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
